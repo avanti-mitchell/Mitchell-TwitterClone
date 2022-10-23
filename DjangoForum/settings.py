@@ -29,7 +29,10 @@ SECRET_KEY = 'django-insecure-7#&u%w@8(=e0tw%axt!zo**kkcpi^%j%7xis*m1bf4##d4ff6d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
+X_FRAME_OPTIONS = "*"
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1:8000','https://0.0.0:3000','']
 
 
 # Application definition
@@ -43,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'posts',
     'cloudinary',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -54,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'DjangoForum.urls'
@@ -147,9 +152,9 @@ STATICFILES_DIRS = (
 )
 
 cloudinary.config( 
-  cloud_name = "mekonin", 
-  api_key = "975299266119949", 
-  api_secret = "IfmZ88oKARme3yBpWtlAp5Ydh94" 
+  cloud_name = "dtp7838dw", 
+  api_key = "915123544415526", 
+  api_secret = "yglM7tp0550Y8mevhAERqMTzruM" 
 )
 
 
