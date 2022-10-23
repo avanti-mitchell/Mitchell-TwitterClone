@@ -30,6 +30,9 @@ SECRET_KEY = 'django-insecure-7#&u%w@8(=e0tw%axt!zo**kkcpi^%j%7xis*m1bf4##d4ff6d
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+X_FRAME_OPTIONS = "*"
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1:8000','https://0.0.0:3000','https://Mitchell-TwitterClone.missemry.repl.co']
 
 
 # Application definition
