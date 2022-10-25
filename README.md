@@ -9,4 +9,4 @@ Uses
 * Cloudinary (Cloud Storage for images)
 
 
-url: https://Mitchell-TwitterClone.missemry.repl.co
+url: https://mitchell-twitterclone-1.missemry.repl.co
